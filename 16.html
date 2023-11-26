@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="16.js" defer></script>
+    <title>Social Media Page</title>
+    <style>
+        body {
+            
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f0f0;
+        }
+
+        #container {
+            max-width: 600px;
+            margin: 20px auto;
+            background-color: #fff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+            overflow: hidden;
+        }
+
+        .post {
+            padding: 20px;
+            border-bottom: 1px solid #eee;
+            position: relative;
+        }
+
+        .post button {
+            margin-right: 10px;
+            cursor: pointer;
+        }
+
+        .like-btn {
+            color: #3498db;
+        }
+
+        .delete-btn {
+            color: #e74c3c;
+        }
+
+        .add-btn {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            background-color: #3498db;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+    <h2>&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;facebook</h2>
+    
+
+<div id="container">
+    <div class="post" id="post1">
+        <p>Hello, goodmorning!!!</p>
+        <button class="like-btn" onclick="likePost(1)">Like</button>
+        <button class="delete-btn" onclick="deletePost(1)">Delete</button>
+    </div>
+    <!-- Add more posts here as needed -->
+
+    <button class="add-btn" onclick="addPost()">Add Post</button>
+</div>
+
+<script src="16.js" defer></script>
+
+</body>
+</html>
